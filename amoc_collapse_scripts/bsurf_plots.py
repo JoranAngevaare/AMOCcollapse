@@ -13,12 +13,13 @@ import numpy as np
 import optim_esm_tools as oet
 import scipy.ndimage
 import xarray as xr
+from scipy.signal.windows import gaussian
+
 from amoc_collapse_scripts import amoc_deep_dive
 from amoc_collapse_scripts import amoc_deep_dive_group
 from amoc_collapse_scripts import helper_scripts
 from amoc_collapse_scripts import path_setup
 from amoc_collapse_scripts.amoc_deep_dive import mask_to_full_mask
-from scipy.signal.windows import gaussian
 
 rename_dict = {
     "Greenland Sea": "Nordic Seas",

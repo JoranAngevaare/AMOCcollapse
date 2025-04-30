@@ -29,7 +29,6 @@ import matplotlib.pyplot as plt
 import numba
 import numpy as np
 import optim_esm_tools as oet
-
 import pandas as pd
 import psutil
 import regionmask
@@ -442,7 +441,7 @@ def make_plot(label, result_bucket, folder_dict, save_kw):
         {
             "Ocean heating 26N": ("time", pad_to_length(y26, len(t))),
             "Ocean heating 45N": ("time", pad_to_length(y45, len(t))),
-        }
+        },
     )
     y_plus = (
         y26
@@ -458,7 +457,7 @@ def make_plot(label, result_bucket, folder_dict, save_kw):
         {
             "Heatloss + Ocean heating 26N": ("time", pad_to_length(y_plus, len(t))),
             "Ocean heating 45N": ("time", pad_to_length(y45, len(t))),
-        }
+        },
     )
 
     plt.suptitle(" ".join(label.split(" ")[:2]), y=1.3)
